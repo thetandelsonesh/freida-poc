@@ -1,0 +1,565 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "App",
+            "id": "component-App-4abe396d6cc4ccd65606a12b3d810d822efc5dbaee85a5eeac255529b6db70c527b3517352c9d53ecb66adbdd735418d69af77eaa73975ce8f14c0bcc80667c6",
+            "file": "src/app/app.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./app.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "signal('freida-poc')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "modifierKind": [
+                        124,
+                        148
+                    ]
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RouterOutlet"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, signal } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\n\n@Component({\n  selector: 'app-root',\n  imports: [RouterOutlet],\n  templateUrl: './app.html',\n  styleUrl: './app.scss'\n})\nexport class App {\n  protected readonly title = signal('freida-poc');\n}\n",
+            "styleUrl": "./app.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<router-outlet/>"
+        },
+        {
+            "name": "Button",
+            "id": "component-Button-a89539916c36d6816b3ff44b0ee7d84d926bd301ebb59ef8bbf44af772f42f611bad351e16ea5df1d5b2d83c295d12a1962ae1e328df76c6ece022afd7497369",
+            "file": "src/app/uikit/button/button.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./button.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "showIcon",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "\"button\" | \"submit\" | \"reset\"",
+                    "decorators": []
+                },
+                {
+                    "name": "variant",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "\"primary\" | \"secondary\" | \"text\" | \"link\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\n@Component({\n  selector: 'app-button',\n  standalone: true,\n  imports: [CommonModule],\n  templateUrl: './button.html',\n  styleUrl: './button.scss'\n})\nexport class Button {\n  @Input() variant: 'primary' | 'secondary' | 'text' | 'link' = 'primary';\n  @Input() disabled: boolean = false;\n  @Input() showIcon: boolean = false;\n  @Input() type: 'button' | 'submit' | 'reset' = 'button';\n}\n",
+            "styleUrl": "./button.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<button\n  [class]=\"'btn btn-' + variant\"\n  [disabled]=\"disabled\"\n  [type]=\"type\">\n  <ng-content></ng-content>\n</button>\n"
+        },
+        {
+            "name": "Home",
+            "id": "component-Home-c521536be2a3bd8b6612cf53db130fdc453612143ffa1ca8f0a974e664c5aa8c62ab543f94721520aa549987c528a35ed6c7de27cbf969f171fc277756e9b053",
+            "file": "src/app/pages/home/home.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-home",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./home.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "Button"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { Button } from '../../uikit/button/button';\n\n@Component({\n  selector: 'app-home',\n  imports: [Button],\n  templateUrl: './home.html',\n  styleUrl: './home.scss'\n})\nexport class Home {\n\n}\n",
+            "styleUrl": "./home.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"py-6 freida-v2 bg-light-grey\">\n\n  <div class=\"layout-row my-4\">\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">1</div>\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">2</div>\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">3</div>\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">4</div>\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">5</div>\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">6</div>\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">7</div>\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">8</div>\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">9</div>\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">10</div>\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">11</div>\n    <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">12</div>\n  </div>\n  \n  <div class=\"layout-container bg-primary\">\n    <div class=\"layout-row\">\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">1</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">2</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">3</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">4</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">5</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">6</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">7</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">8</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">9</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">10</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">11</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300\">12</div>\n    </div>\n    <div class=\"layout-row my-4\">\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-3 bg-gray-300\">1</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-3 bg-gray-300\">2</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-3 bg-gray-300\">3</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-3 bg-gray-300\">4</div>\n    </div>\n    <div class=\"layout-row my-4\">\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 bg-gray-300\">1</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 bg-gray-300\">2</div>\n      <div class=\"col-span-12 md:col-span-6 lg:col-span-4 bg-gray-300\">3</div>\n    </div>\n    <div class=\"layout-row my-4\">\n      <div class=\"col-span-12 md:col-span-6 bg-gray-300\">1</div>\n      <div class=\"col-span-12 md:col-span-6 bg-gray-300\">2</div>\n    </div>\n    <div class=\"layout-row my-4\">\n      <div class=\"col-span-12 bg-gray-300\">1</div>\n    </div>\n    <div class=\"layout-row my-4\">\n      <div class=\"col-span-12 md:col-span-6 bg-gray-300\">\n        <div class=\"layout-row my-4\">\n          <div class=\"col-span-12 md:col-span-4 bg-gray-500\">1</div>\n          <div class=\"col-span-12 md:col-span-4 bg-gray-500\">2</div>\n          <div class=\"col-span-12 md:col-span-4 bg-gray-500\">2</div>\n        </div>\n      </div>\n      <div class=\"col-span-12 md:col-span-6 bg-gray-300\">\n        <div class=\"layout-row my-4\">\n          <div class=\"col-span-3 bg-gray-500\">1</div>\n          <div class=\"col-span-3 bg-gray-500\">2</div>\n          <div class=\"col-span-3 bg-gray-500\">3</div>\n          <div class=\"col-span-3 bg-gray-500\">4</div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n   <div class=\"layout-container\">\n    <!-- Header -->\n    <header class=\"mb-8\">\n      <div class=\"text-breadcrumb mb-2\">\n        Typography • Design System\n      </div>\n\n      <div class=\"hero-display mb-2\">Hero Display</div>\n\n      <div class=\"text-base text-text-secondary mb-4\">\n        This page previews headings, display styles, body text, and UI text across mobile/desktop rules.\n      </div>\n\n      <div class=\"h2-display mb-4\">H2 Display (Kepler)</div>\n      <hr class=\"border-divider\" />\n    </header>\n\n    <!-- Headings -->\n    <section class=\"mb-8\">\n      <div class=\"text-breadcrumb mb-4\">Headings</div>\n\n      <div class=\"mb-4\">\n        <h1 class=\"h1 mb-1\">H1 — The quick brown fox jumps over the lazy dog</h1>\n        <div class=\"text-tiny text-text-secondary\">Class: .h1</div>\n      </div>\n\n      <div class=\"mb-4\">\n        <h2 class=\"h2 mb-1\">H2 — The quick brown fox jumps over the lazy dog</h2>\n        <div class=\"text-tiny text-text-secondary\">Class: .h2</div>\n      </div>\n\n      <div class=\"mb-4\">\n        <h3 class=\"h3 mb-1\">H3 — The quick brown fox jumps over the lazy dog</h3>\n        <div class=\"text-tiny text-text-secondary\">Class: .h3</div>\n      </div>\n\n      <div class=\"mb-4\">\n        <h4 class=\"h4 mb-1\">H4 — The quick brown fox jumps over the lazy dog</h4>\n        <div class=\"text-tiny text-text-secondary\">Class: .h4</div>\n      </div>\n\n      <div class=\"mb-4\">\n        <h5 class=\"h5 mb-1\">H5 — The quick brown fox jumps over the lazy dog</h5>\n        <div class=\"text-tiny text-text-secondary\">Class: .h5</div>\n      </div>\n\n      <div class=\"mb-4\">\n        <h6 class=\"h6 mb-1\">H6 — The quick brown fox jumps over the lazy dog</h6>\n        <div class=\"text-tiny text-text-secondary\">Class: .h6</div>\n      </div>\n\n      <hr class=\"border-divider\" />\n    </section>\n\n    <!-- Body text -->\n    <section class=\"mb-8\">\n      <div class=\"text-breadcrumb mb-4\">Body text</div>\n\n      <div class=\"mb-4\">\n        <p class=\"text-large mb-1\">\n          Text Large — Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n        </p>\n        <div class=\"text-tiny text-text-secondary\">Class: .text-large</div>\n      </div>\n\n      <div class=\"mb-4\">\n        <p class=\"text-base mb-1\">\n          Text Base — Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n        </p>\n        <div class=\"text-tiny text-text-secondary\">Class: .text-base</div>\n      </div>\n\n      <div class=\"mb-4\">\n        <p class=\"text-small mb-1\">\n          Text Small — Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n        </p>\n        <div class=\"text-tiny text-text-secondary\">Class: .text-small</div>\n      </div>\n\n      <div class=\"mb-4\">\n        <p class=\"text-tiny mb-1\">\n          Text XS — Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n        </p>\n        <div class=\"text-tiny text-text-secondary\">Class: .text-tiny</div>\n      </div>\n\n      <hr class=\"border-divider\" />\n    </section>\n\n    <!-- UI text -->\n    <section class=\"mb-8\">\n      <div class=\"text-breadcrumb mb-4\">UI text</div>\n\n      <div class=\"mb-4\">\n        <div class=\"text-button mb-1\">Text Button — Button label</div>\n        <div class=\"text-tiny text-text-secondary\">Class: .text-button</div>\n      </div>\n\n      <div class=\"mb-4\">\n        <div class=\"text-pill mb-1\">Text Pill — Pill label</div>\n        <div class=\"text-tiny text-text-secondary\">Class: .text-pill</div>\n      </div>\n\n      <div class=\"mb-4\">\n        <div class=\"text-breadcrumb mb-1\">\n          Breadcrumb — Home / Library / Data\n        </div>\n        <div class=\"text-tiny text-text-secondary\">Class: .text-breadcrumb</div>\n      </div>\n\n      <hr class=\"border-divider\" />\n    </section>\n\n    <!-- Buttons -->\n    <section>\n      <div class=\"text-breadcrumb mb-4\">Buttons</div>\n\n      <div class=\"layout-row\">\n        <div class=\"col-span-12\">\n          <app-button variant=\"primary\">Primary</app-button>\n          <app-button variant=\"primary\">primary</app-button>\n        </div>\n      </div>\n      <div class=\"layout-row\">\n        <div class=\"col-span-12\">\n          <app-button variant=\"text\">Text</app-button>\n          <app-button variant=\"link\">Link</app-button>\n        </div>\n      </div>\n      <div class=\"layout-row\">\n        <div class=\"col-span-12\">\n          <app-button class=\"btn btn-primary\" [disabled]=\"true\">Primary Disabled</app-button>\n        </div>\n      </div>\n    </section>\n   </div>\n\n</div>\n"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "angularApp",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "unknown",
+                "defaultValue": "new AngularNodeAppEngine()"
+            },
+            {
+                "name": "app",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "unknown",
+                "defaultValue": "express()"
+            },
+            {
+                "name": "appConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\n  providers: [\n    provideBrowserGlobalErrorListeners(),\n    provideZoneChangeDetection({ eventCoalescing: true }),\n    provideRouter(routes), provideClientHydration(withEventReplay())\n  ]\n}"
+            },
+            {
+                "name": "bootstrap",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/main.server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "unknown",
+                "defaultValue": "(context: BootstrapContext) =>\n    bootstrapApplication(App, config, context)"
+            },
+            {
+                "name": "browserDistFolder",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "unknown",
+                "defaultValue": "join(import.meta.dirname, '../browser')"
+            },
+            {
+                "name": "config",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "unknown",
+                "defaultValue": "mergeApplicationConfig(appConfig, serverConfig)"
+            },
+            {
+                "name": "reqHandler",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "unknown",
+                "defaultValue": "createNodeRequestHandler(app)",
+                "rawdescription": "Request handler used by the Angular CLI (for dev-server and during build) or Firebase Cloud Functions.",
+                "description": "<p>Request handler used by the Angular CLI (for dev-server and during build) or Firebase Cloud Functions.</p>\n"
+            },
+            {
+                "name": "routes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.routes.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Routes",
+                "defaultValue": "[\n  {\n    path: '',\n    component: Home\n  },\n]"
+            },
+            {
+                "name": "serverConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\n  providers: [\n    provideServerRendering(withRoutes(serverRoutes))\n  ]\n}"
+            },
+            {
+                "name": "serverRoutes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.routes.server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ServerRoute[]",
+                "defaultValue": "[\n  {\n    path: '**',\n    renderMode: RenderMode.Server\n  }\n]"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/server.ts": [
+                {
+                    "name": "angularApp",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "defaultValue": "new AngularNodeAppEngine()"
+                },
+                {
+                    "name": "app",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "defaultValue": "express()"
+                },
+                {
+                    "name": "browserDistFolder",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "defaultValue": "join(import.meta.dirname, '../browser')"
+                },
+                {
+                    "name": "reqHandler",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "defaultValue": "createNodeRequestHandler(app)",
+                    "rawdescription": "Request handler used by the Angular CLI (for dev-server and during build) or Firebase Cloud Functions.",
+                    "description": "<p>Request handler used by the Angular CLI (for dev-server and during build) or Firebase Cloud Functions.</p>\n"
+                }
+            ],
+            "src/app/app.config.ts": [
+                {
+                    "name": "appConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\n  providers: [\n    provideBrowserGlobalErrorListeners(),\n    provideZoneChangeDetection({ eventCoalescing: true }),\n    provideRouter(routes), provideClientHydration(withEventReplay())\n  ]\n}"
+                }
+            ],
+            "src/main.server.ts": [
+                {
+                    "name": "bootstrap",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/main.server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "defaultValue": "(context: BootstrapContext) =>\n    bootstrapApplication(App, config, context)"
+                }
+            ],
+            "src/app/app.config.server.ts": [
+                {
+                    "name": "config",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "defaultValue": "mergeApplicationConfig(appConfig, serverConfig)"
+                },
+                {
+                    "name": "serverConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\n  providers: [\n    provideServerRendering(withRoutes(serverRoutes))\n  ]\n}"
+                }
+            ],
+            "src/app/app.routes.ts": [
+                {
+                    "name": "routes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.routes.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Routes",
+                    "defaultValue": "[\n  {\n    path: '',\n    component: Home\n  },\n]"
+                }
+            ],
+            "src/app/app.routes.server.ts": [
+                {
+                    "name": "serverRoutes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.routes.server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ServerRoute[]",
+                    "defaultValue": "[\n  {\n    path: '**',\n    renderMode: RenderMode.Server\n  }\n]"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "children": [
+            {
+                "name": "Home",
+                "kind": "component",
+                "path": "",
+                "filename": "src/app/app.routes.ts"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 7,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.config.server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "config",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "serverConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.routes.server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "serverRoutes",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.routes.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "routes",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "App",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home/home.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Home",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/uikit/button/button.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Button",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/main.server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "bootstrap",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "angularApp",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "app",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "browserDistFolder",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "reqHandler",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            }
+        ]
+    }
+}

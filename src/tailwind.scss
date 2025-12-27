@@ -1,0 +1,183 @@
+@use 'tailwindcss';
+/* Tailwind v4 color theme */
+@theme {
+  /* Spacing - 8px Base Unit System */
+  --spacing-0: 0px;
+  --spacing-1: 2px;
+  --spacing-2: 4px;
+  --spacing-3: 6px;
+  --spacing-4: 8px;
+  --spacing-5: 12px;
+  --spacing-6: 16px;
+  --spacing-7: 20px;
+  --spacing-8: 24px;
+  --spacing-9: 32px;
+  --spacing-10: 40px;
+  --spacing-11: 48px;
+  --spacing-12: 64px;
+  --spacing-13: 80px;
+  --spacing-14: 120px;
+
+  /* Fluid Grid System - Breakpoints */
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+
+  /* Purple color palette */
+  --color-purple-50: #f1eafa;
+  --color-purple-100: #e3d4f6;
+  --color-purple-200: #c7a9ed;
+  --color-purple-300: #aa7fe3;
+  --color-purple-400: #8e54da;
+  --color-purple-500: #7229d1;
+  --color-purple-600: #5b21a7;
+  --color-purple-700: #44197d;
+  --color-purple-800: #2e1054;
+  --color-purple-900: #17082a;
+  --color-purple-950: #0b0415;
+
+  /* Blue color palette */
+  --color-blue-50: #e6f2f8;
+  --color-blue-100: #cce5f2;
+  --color-blue-200: #9acbe4;
+  --color-blue-300: #9acbe4;
+  --color-blue-400: #3597c9;
+  --color-blue-500: #027dbc;
+  --color-blue-600: #026496;
+  --color-blue-700: #014871;
+  --color-blue-800: #01324b;
+  --color-blue-900: #001926;
+  --color-blue-950: #000d13;
+
+  /* Grey color palette */
+  --color-grey-50: #eeeeef;
+  --color-grey-100: #dddcde;
+  --color-grey-200: #bbbabe;
+  --color-grey-300: #9a979d;
+  --color-grey-400: #78757d;
+  --color-grey-500: #56525c;
+  --color-grey-600: #45424a;
+  --color-grey-700: #343137;
+  --color-grey-800: #222125;
+  --color-grey-900: #222125;
+  --color-grey-950: #090809;
+
+  /* Orange color palette */
+  --color-orange-50: #fdf3e5;
+  --color-orange-100: #fbe8cc;
+  --color-orange-200: #f8d199;
+  --color-orange-300: #f4b966;
+  --color-orange-400: #f1a233;
+  --color-orange-500: #ed8b00;
+  --color-orange-600: #be6f00;
+  --color-orange-700: #8e5300;
+  --color-orange-800: #5f3800;
+  --color-orange-900: #2f1c00;
+  --color-orange-950: #180e00;
+
+  /* Green color palette */
+  --color-green-50: #edf3e6;
+  --color-green-100: #dbe6cd;
+  --color-green-200: #b8ce9b;
+  --color-green-300: #94b56a;
+  --color-green-400: #719d38;
+  --color-green-500: #4d8406;
+  --color-green-600: #3e6a05;
+  --color-green-700: #2e4f04;
+  --color-green-800: #1f3502;
+  --color-green-900: #0f1a01;
+  --color-green-950: #080d01;
+
+  /* Red color palette */
+  --color-red-50: #fde7e9;
+  --color-red-100: #fbced4;
+  --color-red-200: #f69ea8;
+  --color-red-300: #f26d7d;
+  --color-red-400: #ed3d51;
+  --color-red-500: #e90c26;
+  --color-red-600: #ba0a1e;
+  --color-red-700: #8c0717;
+  --color-red-800: #5d050f;
+  --color-red-900: #2f0208;
+  --color-red-950: #170104;
+
+  /* Seafoam color palette */
+  --color-seafoam-50: #e7fbf8;
+  --color-seafoam-100: #cff8f2;
+  --color-seafoam-200: #9ff1e5;
+  --color-seafoam-300: #6fead8;
+  --color-seafoam-400: #3fe3cb;
+  --color-seafoam-500: #0fdcbe;
+  --color-seafoam-600: #0cb098;
+  --color-seafoam-700: #098472;
+  --color-seafoam-800: #06584c;
+  --color-seafoam-900: #032c26;
+  --color-seafoam-950: #021613;
+
+  /* Background colors */
+  --color-white: #ffffff;
+  --color-light-grey: #f6f6f8;
+
+  /* Strokes and rules */
+  --color-divider-line: #e4e3e6;
+
+  /* Brand colors */
+  --color-ama-purple: #46166b;
+  /* Magenta color palette */
+  --color-magenta-500: #bc2989;
+
+  /* Typography - Font Families */
+  --font-kepler: "kepler-std", serif;
+  --font-myriad: "myriad-pro", sans-serif;
+  
+  /* Typography - Font Weights */
+  --font-weight-light: 300;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+
+  /* Typography - Desktop Font Sizes */
+  --text-hero-display-desktop: 48px;
+  --text-hero-2-display-desktop: 32px;
+  --text-h1-desktop: 32px;
+  --text-h2-desktop: 24px;
+  --text-h3-desktop: 20px;
+  --text-h4-desktop: 18px;
+  --text-h5-desktop: 16px;
+  --text-h6-desktop: 14px;
+  /* Typography - Mobile Font Sizes */
+  --text-hero-display-mobile: 32px;
+  --text-hero-2-display-mobile: 24px;
+  --text-h1-mobile: 28px;
+  --text-h2-mobile: 20px;
+  --text-h3-mobile: 18px;
+  --text-h4-mobile: 16px;
+  --text-h5-mobile: 14px;
+  --text-h6-mobile: 12px;
+  /* Typography - Common Font Sizes */
+  --text-button: 16px;
+  --text-pill: 14px;
+  --text-breadcrumb: 14px;
+  
+  --text-large: 18px;
+  --text-base: 16px;
+  --text-small: 14px;
+  --text-x-small: 12px;
+
+  /* Shadows */
+  --shadow-01: 0 2px 8px 0 rgba(23, 8, 42, 0.04);
+  --shadow-02: 0 4px 16px 0 rgba(23, 8, 42, 0.12);
+
+  /* Semantic color tokens - CTAs (Call To Actions) */
+  --color-primary: var(--color-purple-500);
+  --color-secondary: var(--color-blue-500);
+
+  /* Semantic color tokens - Text */
+  --color-text-primary: var(--color-purple-950);
+  --color-text-secondary: var(--color-grey-500);
+
+  /* Semantic color tokens */
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-green-500);
+  --color-warning: var(--color-orange-500);
+}

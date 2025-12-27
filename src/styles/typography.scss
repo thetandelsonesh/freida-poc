@@ -1,0 +1,64 @@
+@layer base {
+  .freida-v2 {
+    .hero-display {
+      @apply font-myriad font-bold text-hero-display-mobile md:text-hero-display-desktop leading-[39px] md:leading-[58px];
+    }
+
+    .hero-display-2 {
+      @apply font-kepler font-semibold text-hero-2-display-mobile md:text-hero-2-display-desktop leading-[29px] md:leading-[38px];
+    }
+
+    .h1 {
+      @apply font-myriad font-bold text-h1-mobile md:text-h1-desktop leading-[34px] md:leading-[38px];
+    }
+
+    .h2 {
+      @apply font-myriad font-bold text-h2-mobile md:text-h2-desktop leading-[24px] md:leading-[28px];
+    }
+
+    .h3 {
+      @apply font-myriad font-bold text-h3-mobile md:text-h3-desktop leading-[21px] md:leading-[24px];
+    }
+
+    .h4 {
+      @apply font-myriad font-semibold text-h4-mobile md:text-h4-desktop leading-[19px] md:leading-[21px];
+    }
+
+    .h5 {
+      @apply font-myriad font-semibold text-h5-mobile md:text-h5-desktop leading-[16px] md:leading-[19px];
+    }
+
+    .h6 {
+      @apply font-myriad font-semibold text-h6-mobile md:text-h6-desktop leading-[14px] md:leading-[17px];
+    }
+
+    .text-large {
+      @apply font-kepler font-light text-large leading-[24px];
+    }
+
+    .text-base {
+      @apply font-kepler font-light text-base leading-[20px];
+    }
+
+    .text-small {
+      @apply font-kepler font-light text-small leading-[16px];
+    }
+
+    .text-tiny {
+      @apply font-kepler font-light text-x-small leading-[14px];
+    }
+
+    /* Linking Elements */
+    .text-button {
+      @apply font-myriad font-bold text-button leading-[19px];
+    }
+
+    .text-pill {
+      @apply font-myriad font-semibold text-pill leading-[16px];
+    }
+
+    .text-breadcrumb {
+      @apply font-myriad font-bold text-breadcrumb leading-[16px] tracking-[0.08em];
+    }
+  }
+}
