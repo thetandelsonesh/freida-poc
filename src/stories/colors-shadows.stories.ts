@@ -51,7 +51,7 @@ const colorsTemplate = `
 
     <!-- Backgrounds -->
     <div class="flex flex-col gap-3">
-      <div class="font-semibold">Backgrounds</div>
+      <div class="font-medium">Backgrounds</div>
       <div class="flex flex-row items-center gap-5">
         <div class="h-[20px] w-[20px] bg-white border"></div>
         <div>BackgroundWhite | #FFFFFF</div>
@@ -64,7 +64,7 @@ const colorsTemplate = `
 
     <!-- Strokes & Rule Lines -->
     <div class="flex flex-col gap-3">
-      <div class="font-semibold">Strokes & Rule Lines</div>
+      <div class="font-medium">Strokes & Rule Lines</div>
       <div class="flex flex-row items-center gap-5">
         <div class="h-[20px] w-[20px] bg-divider-line"></div>
         <div>DividerLineGrey | #E4E3E6</div>
@@ -73,7 +73,7 @@ const colorsTemplate = `
 
     <!-- CTAs -->
     <div class="flex flex-col gap-3">
-      <div class="font-semibold">CTAs</div>
+      <div class="font-medium">CTAs</div>
       <div class="flex flex-row items-center gap-5">
         <div class="h-[20px] w-[20px] bg-purple-500"></div>
         <div>Purple500 | #7229D1</div>
@@ -86,7 +86,7 @@ const colorsTemplate = `
 
     <!-- Text -->
     <div class="flex flex-col gap-3">
-      <div class="font-semibold">Text</div>
+      <div class="font-medium">Text</div>
       <div class="flex flex-row items-center gap-5">
         <div class="h-[20px] w-[20px] bg-purple-950"></div>
         <div>TextPrimary (Purple950) | #0B0415</div>
@@ -99,7 +99,7 @@ const colorsTemplate = `
 
     <!-- Data Viz -->
     <div class="flex flex-col gap-3">
-      <div class="font-semibold">Data Viz</div>
+      <div class="font-medium">Data Viz</div>
       <div class="flex flex-row items-center gap-5">
         <div class="h-[20px] w-[20px] bg-purple-800"></div>
         <div>Purple800 | #2E1054</div>
@@ -128,7 +128,7 @@ const colorsTemplate = `
 
     <!-- Alerts -->
     <div class="flex flex-col gap-3">
-      <div class="font-semibold">Alerts</div>
+      <div class="font-medium">Alerts</div>
       <div class="flex flex-row items-center gap-5">
         <div class="h-[20px] w-[20px] bg-red-500"></div>
         <div>Red500 | #E90C26</div>
@@ -163,7 +163,7 @@ const shadowsTemplate = `
 <div class="freida-v2 font-mono">
   <div class="flex flex-col gap-8">
     <div class="flex flex-col gap-6">
-      <div class="font-semibold">Shadow Elevation</div>
+      <div class="font-medium">Shadow Elevation</div>
       <div class="flex flex-row items-center gap-5">
         <div class="h-[120px] w-[120px] bg-white shadow-01"></div>
         <div>Shadow 1 | 0 2px 8px 0 rgba(23, 8, 42, 0.04)</div>

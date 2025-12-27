@@ -14,14 +14,12 @@ const fontsTemplate = `
     <div class="mb-5">
       <div class="font-myriad text-2xl">Font Myriad </div>
       <div class="font-myriad font-bold text-2xl">Font Myriad Bold</div>
-      <div class="font-myriad font-semibold text-2xl">Font Myriad SemiBold</div>
+      <div class="font-myriad font-medium text-2xl">Font Myriad Medium(SemiBold)</div>
       <div class="font-myriad font-light text-2xl">Font Myriad Light</div>
     </div>
 
     <div class="mb-5">
-      <div class="font-kepler text-2xl">Font Kepler </div>
-      <div class="font-kepler font-bold text-2xl">Font Kepler Bold</div>
-      <div class="font-kepler font-semibold text-2xl">Font Kepler SemiBold</div>
+      <div class="font-kepler font-medium text-2xl">Font Kepler Medium(SemiBold)</div>
       <div class="font-kepler font-light text-2xl">Font Kepler Light</div>
     </div>
   </div>

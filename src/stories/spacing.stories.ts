@@ -29,7 +29,7 @@ const spacingGuidelines = `
   </div>
   <!-- Common Usage Guidance -->
   <div class="flex flex-col gap-2 mt-4">
-    <div class="font-semibold">Guidelines</div>
+    <div class="font-medium">Guidelines</div>
     <ul class="list-disc ml-6 text-text-secondary">
       <li>Use spacing tokens instead of hardcoded px</li>
       <li>Prefer gap for layout spacing</li>
@@ -58,7 +58,7 @@ const spacingTemplate = `
 
     <!-- Margin -->
     <div class="flex flex-col gap-4">
-      <div class="font-semibold">Margin</div>
+      <div class="font-medium">Margin</div>
 
       <div class="flex flex-col gap-2">
         <div class="bg-grey-100 p-2">
@@ -75,7 +75,7 @@ const spacingTemplate = `
 
     <!-- Padding -->
     <div class="flex flex-col gap-4">
-      <div class="font-semibold">Padding</div>
+      <div class="font-medium">Padding</div>
 
       <div class="flex flex-row gap-4">
         <div class="bg-blue-200 p-2">p-2</div>
@@ -87,7 +87,7 @@ const spacingTemplate = `
 
     <!-- Gap -->
     <div class="flex flex-col gap-4">
-      <div class="font-semibold">Gap</div>
+      <div class="font-medium">Gap</div>
 
       <div class="flex gap-2 bg-grey-100 p-2">
         <div class="bg-seafoam-300 p-2">gap-2</div>
@@ -104,7 +104,7 @@ const spacingTemplate = `
 
     <!-- Width / Height -->
     <div class="flex flex-col gap-4">
-      <div class="font-semibold">Width & Height</div>
+      <div class="font-medium">Width & Height</div>
 
       <div class="flex gap-4 items-end">
         <div class="bg-orange-300 w-8 h-8"></div>
@@ -120,7 +120,7 @@ const spacingTemplate = `
 
     <!-- Position Offsets -->
     <div class="flex flex-col gap-4">
-      <div class="font-semibold">Position Offsets</div>
+      <div class="font-medium">Position Offsets</div>
 
       <div class="relative bg-grey-100 h-24">
         <div class="absolute top-2 left-2 bg-red-400 p-2">

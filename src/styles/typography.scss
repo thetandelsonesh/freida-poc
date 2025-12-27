@@ -5,7 +5,7 @@
     }
 
     .hero-display-2 {
-      @apply font-kepler font-semibold text-hero-2-display-mobile md:text-hero-2-display-desktop leading-[29px] md:leading-[38px];
+      @apply font-kepler font-medium text-hero-2-display-mobile md:text-hero-2-display-desktop leading-[29px] md:leading-[38px];
     }
 
     .h1 {
@@ -21,15 +21,15 @@
     }
 
     .h4 {
-      @apply font-myriad font-semibold text-h4-mobile md:text-h4-desktop leading-[19px] md:leading-[21px];
+      @apply font-myriad font-medium text-h4-mobile md:text-h4-desktop leading-[19px] md:leading-[21px];
     }
 
     .h5 {
-      @apply font-myriad font-semibold text-h5-mobile md:text-h5-desktop leading-[16px] md:leading-[19px];
+      @apply font-myriad font-medium text-h5-mobile md:text-h5-desktop leading-[16px] md:leading-[19px];
     }
 
     .h6 {
-      @apply font-myriad font-semibold text-h6-mobile md:text-h6-desktop leading-[14px] md:leading-[17px];
+      @apply font-myriad font-medium text-h6-mobile md:text-h6-desktop leading-[14px] md:leading-[17px];
     }
 
     .text-large {
@@ -54,7 +54,7 @@
     }
 
     .text-pill {
-      @apply font-myriad font-semibold text-pill leading-[16px];
+      @apply font-myriad font-medium text-pill leading-[16px];
     }
 
     .text-breadcrumb {
