@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
 const meta: Meta = {
-  title: 'Foundation/Fonts & Typography',
+  title: 'Foundation/Fonts, Icons & Typography',
   tags: ['autodocs'],
 
 };
@@ -11,6 +11,15 @@ type Story = StoryObj;
 
 const fontsTemplate = `
   <div class="freida-v2">
+
+    <div class="mb-5 flex items-center gap-4">
+      <div class="font-mono">Phosphor Icons:</div>
+      <i class="ph ph-smiley"></i>
+      <i class="ph ph-heart ph-icon"></i>
+      <i class="ph ph-cube ph-icon text-[32px]"></i>
+      <i class="ph ph-bell ph-icon text-orange-500"></i>
+    </div>
+
     <div class="mb-5">
       <div class="font-myriad text-2xl">Font Myriad </div>
       <div class="font-myriad font-bold text-2xl">Font Myriad Bold</div>

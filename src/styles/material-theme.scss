@@ -1,0 +1,109 @@
+@use '@angular/material' as mat;
+@use 'tailwindcss';
+
+/* Angular Material v20+ (M3) button tokens */
+:root {
+  @include mat.button-overrides((
+    /* ───────────────────────── Layout / Shape ───────────────────────── */
+    filled-container-shape: 6px,          
+    filled-horizontal-padding: var(--spacing-6),
+    filled-icon-offset: var(--spacing-1),            
+    filled-icon-spacing: var(--spacing-3),            
+    filled-label-text-transform: none,
+    filled-touch-target-size: var(--spacing-11),    
+    filled-touch-target-display: block,
+    filled-container-height: 44px,       
+    /* ───────────────────────── Colors ───────────────────────── */
+    filled-container-color: var(--color-primary),
+    filled-label-text-color: var(--color-white),
+    filled-ripple-color: transparent,
+    filled-disabled-container-color: var(--color-grey-100),
+    filled-disabled-label-text-color: var(--color-grey-400),
+    /* ───────────────────────── State-layer opacity ───────────────────────── */
+    filled-hover-state-layer-opacity: 0,
+    filled-focus-state-layer-opacity: 0,
+    filled-pressed-state-layer-opacity: 0,
+    /* ───────────────────────── Typography ───────────────────────── */
+    filled-label-text-font: var(--font-myriad),
+    filled-label-text-size: var(--text-button),
+    filled-label-text-weight: 700,
+    filled-label-text-tracking: 0,
+    /* ───────────────────────── Elevation (protected = elevated button) ───────────────────────── */
+    protected-container-elevation-shadow: none,
+    protected-hover-container-elevation-shadow: none,
+    protected-focus-container-elevation-shadow: none,
+    protected-pressed-container-elevation-shadow: none,
+    protected-disabled-container-elevation-shadow: none,
+  ));
+}
+
+.mdc-button.mat-mdc-unelevated-button{
+  min-width: 100px;
+  margin: 0;
+  .ph-icon{
+    padding-left: var(--spacing-3);
+    font-size: 24px;
+    color: var(--color-white);
+    vertical-align: middle;
+  }
+}
+.mat-mdc-unelevated-button:focus {
+  outline: 2px solid var(--color-blue-500);
+  outline-offset: 2px;
+}
+
+.mat-mdc-unelevated-button.btn-primary:not(.mat-mdc-button-disabled):not(:disabled):hover {
+  --mat-button-filled-container-color: var(--color-purple-700);
+}
+.mat-mdc-unelevated-button.mat-mdc-button-disabled:disabled {
+  .ph-icon{
+    color: var(--color-grey-400);
+  }
+}
+
+.mat-mdc-unelevated-button.btn-secondary:not(.mat-mdc-button-disabled):not(:disabled) {
+  --mat-button-filled-container-color: var(--color-white);
+  --mat-button-filled-label-text-color: var(--color-purple-800);
+  --mat-button-filled-ripple-color: transparent;
+  border: 1px solid var(--color-divider-line);
+  box-sizing: border-box;
+  .ph-icon{
+    color: var(--color-purple-800);
+  }
+}
+.mat-mdc-unelevated-button.btn-secondary:not(.mat-mdc-button-disabled):not(:disabled):hover {
+  --mat-button-filled-container-color: var(--color-grey-50);
+}
+
+.mat-mdc-unelevated-button.btn-text:not(.mat-mdc-button-disabled):not(:disabled) {
+  --mat-button-filled-container-color: transparent;
+  --mat-button-filled-label-text-color: var(--color-purple-800);
+  --mat-button-filled-ripple-color: transparent;
+  .ph-icon{
+    color: var(--color-purple-800);
+  }
+}
+.mat-mdc-unelevated-button.btn-text:not(.mat-mdc-button-disabled):not(:disabled):hover {
+  --mat-button-filled-container-color: var(--color-grey-50);
+}
+
+.mat-mdc-unelevated-button.btn-link {
+  --mat-button-filled-container-color: transparent;
+  --mat-button-filled-label-text-color: var(--color-primary);
+  --mat-button-filled-ripple-color: transparent;
+  height: auto!important;
+  min-width: auto!important;
+  padding: 0 var(--spacing-1)!important;
+  .ph-icon{
+    color: var(--color-primary);
+  }
+  .mdc-button__label > span{
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.mat-mdc-unelevated-button.btn-link:not(.mat-mdc-button-disabled):not(:disabled):hover {
+  .mdc-button__label > span{
+    border-bottom: 1px solid var(--color-primary);
+  }
+}

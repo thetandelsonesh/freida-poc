@@ -16,12 +16,12 @@
       "architect": {
         "storybook": {
           "options": {
-            "styles": ["src/styles.scss"]
+            "styles": ["src/styles.scss", "node_modules/@phosphor-icons/web/src/regular/style.css"]
           }
         },
         "build-storybook": {
           "options": {
-            "styles": ["src/styles.scss"]
+            "styles": ["src/styles.scss", "node_modules/@phosphor-icons/web/src/regular/style.css"]
           }
         },
         "build": {
@@ -40,7 +40,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@phosphor-icons/web/src/regular/style.css"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -103,7 +104,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@phosphor-icons/web/src/regular/style.css"
             ]
           }
         },

@@ -1,5 +1,4 @@
 <div class="py-6 freida-v2 bg-light-grey">
-
   <div class="layout-row my-4">
     <div class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300">1</div>
     <div class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300">2</div>
@@ -14,7 +13,32 @@
     <div class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300">11</div>
     <div class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300">12</div>
   </div>
-  
+
+  <!-- Buttons -->
+  <section class="my-10 p-10">
+    <div class="text-breadcrumb mb-4">Buttons</div>
+
+    <button matButton="filled" class="btn-primary mx-4">
+      <span>Button</span> <i class="ph ph-plus-circle ph-icon ph-btn"></i>
+    </button>
+    <button matButton="filled" class="btn-primary mx-4" disabled>Button very long one</button>
+
+    <button matButton="filled" class="btn-secondary mx-4">
+      <span>Button</span> <i class="ph ph-plus-circle ph-icon ph-btn"></i>
+    </button>
+    <button matButton="filled" class="btn-secondary mx-4" disabled>Button</button>
+
+    <button matButton="filled" class="btn-text mx-4">
+      <span>Button</span> <i class="ph ph-plus-circle ph-icon ph-btn"></i>
+    </button>
+    <button matButton="filled" class="btn-text mx-4" disabled>Button</button>
+
+    <button matButton="filled" class="btn-link mx-4">
+      <span>Button</span> <i class="ph ph-plus-circle ph-icon ph-btn"></i>
+    </button>
+    <button matButton="filled" class="btn-link mx-4" disabled>Button</button>
+  </section>
+
   <div class="layout-container bg-primary">
     <div class="layout-row">
       <div class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-gray-300">1</div>
@@ -67,18 +91,16 @@
     </div>
   </div>
 
-
-   <div class="layout-container">
+  <div class="layout-container">
     <!-- Header -->
     <header class="mb-8">
-      <div class="text-breadcrumb mb-2">
-        Typography • Design System
-      </div>
+      <div class="text-breadcrumb mb-2">Typography • Design System</div>
 
       <div class="hero-display mb-2">Hero Display</div>
 
       <div class="text-base text-text-secondary mb-4">
-        This page previews headings, display styles, body text, and UI text across mobile/desktop rules.
+        This page previews headings, display styles, body text, and UI text across mobile/desktop
+        rules.
       </div>
 
       <div class="h2-display mb-4">H2 Display (Kepler)</div>
@@ -172,37 +194,11 @@
       </div>
 
       <div class="mb-4">
-        <div class="text-breadcrumb mb-1">
-          Breadcrumb — Home / Library / Data
-        </div>
+        <div class="text-breadcrumb mb-1">Breadcrumb — Home / Library / Data</div>
         <div class="text-tiny text-text-secondary">Class: .text-breadcrumb</div>
       </div>
 
       <hr class="border-divider" />
     </section>
-
-    <!-- Buttons -->
-    <section>
-      <div class="text-breadcrumb mb-4">Buttons</div>
-
-      <div class="layout-row">
-        <div class="col-span-12">
-          <app-button variant="primary">Primary</app-button>
-          <app-button variant="primary">primary</app-button>
-        </div>
-      </div>
-      <div class="layout-row">
-        <div class="col-span-12">
-          <app-button variant="text">Text</app-button>
-          <app-button variant="link">Link</app-button>
-        </div>
-      </div>
-      <div class="layout-row">
-        <div class="col-span-12">
-          <app-button class="btn btn-primary" [disabled]="true">Primary Disabled</app-button>
-        </div>
-      </div>
-    </section>
-   </div>
-
+  </div>
 </div>

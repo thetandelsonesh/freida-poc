@@ -1,4 +1,11 @@
 @layer base {
+  .ph-icon {
+    @apply text-2xl;
+  }
+  .ph-icon.primary {
+    @apply text-primary text-2xl;
+  }
+  
   .freida-v2 {
     .hero-display {
       @apply font-myriad font-bold text-hero-display-mobile md:text-hero-display-desktop leading-[39px] md:leading-[58px];
